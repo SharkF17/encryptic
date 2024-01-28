@@ -1,10 +1,13 @@
 let taGiven;
+let pResult;
 
 function windowLoaded() {
   let btnEncrypt = document.getElementById("btnEncrypt");
   let btnDecrypt = document.getElementById("btnDecrypt");
   let btnCopy = document.getElementById("btnCopy");
   taGiven = document.getElementById("taGiven");
+  pResult = document.getElementById("pResult");
+
   taGiven.addEventListener("keyup", function () {
     this.value = this.value.toLowerCase();
     this.value = this.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
@@ -84,10 +87,12 @@ function decrypt(taGiven) {
 }
 
 function sendMsg(text) {
-  document.getElementById("pResult").innerHTML = text;
+  pResult.innerHTML = text;
 }
 
 function copy() {
+  console.log(pResult.textContent);
+  navigator.clipboard.writeText(pResult.textContent);
   alert("Copiado");
 }
 
