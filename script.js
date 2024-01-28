@@ -1,8 +1,14 @@
+let taGiven;
+
 function windowLoaded() {
   let btnEncrypt = document.getElementById("btnEncrypt");
   let btnDecrypt = document.getElementById("btnDecrypt");
   let btnCopy = document.getElementById("btnCopy");
-  let textGiven;
+  taGiven = document.getElementById("taGiven");
+  taGiven.addEventListener("keyup", function () {
+    this.value = this.value.toLowerCase();
+    this.value = this.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  });
 
   btnEncrypt.addEventListener("click", encrypt);
   btnDecrypt.addEventListener("click", decrypt);
@@ -10,8 +16,8 @@ function windowLoaded() {
 }
 
 function encrypt() {
+  textGiven = taGiven.value;
   let textConverted = "";
-  textGiven = document.getElementById("taGiven").value;
   for (let i = 0; i < textGiven.length; i++) {
     if (textGiven[i] == "a") {
       textConverted = textConverted + "ai";
@@ -30,7 +36,7 @@ function encrypt() {
   sendMsg(textConverted);
 }
 
-function decrypt() {
+function decrypt(taGiven) {
   let textConverted = "";
   textGiven = document.getElementById("taGiven").value;
   for (let i = 0; i < textGiven.length; i++) {
