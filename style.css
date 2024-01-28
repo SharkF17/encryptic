@@ -1,0 +1,8 @@
+header {
+  display: flex;
+}
+
+footer {
+  background-color: cadetblue;
+  color: aliceblue;
+}
