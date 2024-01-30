@@ -86,10 +86,12 @@ function decrypt(taGiven) {
   sendMsg(textConverted);
 }
 
+//Manda el msg ya encriptado o desencriptado al elemento HTML destino
 function sendMsg(text) {
   pResult.innerHTML = text;
 }
 
+//Funcionalidad del boton de copiar texto
 function copy() {
   console.log(pResult.textContent);
   navigator.clipboard.writeText(pResult.textContent);
