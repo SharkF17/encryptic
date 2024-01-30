@@ -93,9 +93,7 @@ function sendMsg(text) {
 
 //Funcionalidad del boton de copiar texto
 function copy() {
-  console.log(pResult.textContent);
   navigator.clipboard.writeText(pResult.textContent);
-  alert("Copiado");
 }
 
 window.addEventListener("load", windowLoaded);

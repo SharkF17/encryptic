@@ -1,8 +1,80 @@
 header {
   display: flex;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 
 footer {
-  background-color: cadetblue;
-  color: aliceblue;
+  background-color: #504099;
+  position: fixed;
+  bottom: 0;
+  min-width: 100%;
+  font-size: medium;
+}
+
+body {
+  background: #313866;
+  color: #FE7BE5;
+  min-height: 100vh;
+  font-weight: 500;
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+button {
+  color: #FE7BE5;
+  background: #974EC3;
+  font-size: larger;
+  font-weight: bolder;
+  min-width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+textarea {
+  display: flex;
+  margin: auto;
+  background-color: #504099;
+  text-align: center;
+  color: #FE7BE5;
+  min-height: 160px;
+  line-height: 160px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  border: 5px solid #504099;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+}
+
+p {
+  padding: 30px 0;
+}
+
+textarea::placeholder {
+  color: #FE7BE5;
+  line-height: 160px;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+}
+
+.btns {
+  display: flex;
+  justify-content: space-around;
+}
+
+a:visited {
+  color: white;
 }
