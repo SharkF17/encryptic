@@ -8,6 +8,7 @@ header {
 
 footer {
   background-color: #A09BE7;
+  color: #FFF2F1;
   position: fixed;
   bottom: 0;
   min-width: 100%;
@@ -88,6 +89,8 @@ svg {
 
 .rules {
   color: #DE1A1A;
+  font-size: small;
+  font-weight: bolder;
 }
 
 a:visited {
