@@ -7,7 +7,7 @@ header {
 }
 
 footer {
-  background-color: #504099;
+  background-color: #A09BE7;
   position: fixed;
   bottom: 0;
   min-width: 100%;
@@ -17,8 +17,8 @@ footer {
 }
 
 body {
-  background: #313866;
-  color: #FE7BE5;
+  background: #FFF2F1;
+  color: #5F00BA;
   min-height: 100vh;
   font-weight: 500;
   font-size: x-large;
@@ -29,8 +29,8 @@ body {
 }
 
 button {
-  color: #FE7BE5;
-  background: #974EC3;
+  color: #5F00BA;
+  background: #B0FF92;
   font-size: larger;
   font-weight: bolder;
   min-width: 40%;
@@ -43,9 +43,9 @@ button {
 textarea {
   display: flex;
   margin: auto;
-  background-color: #504099;
+  background-color: #5F00BA;
   text-align: center;
-  color: #FE7BE5;
+  color: #D6FF79;
   min-height: 160px;
   line-height: 160px;
 }
@@ -53,7 +53,7 @@ textarea {
 fieldset {
   display: flex;
   flex-direction: column;
-  border: 5px solid #504099;
+  border: 5px solid #A09BE7;
   padding: 20px;
   margin-bottom: 30px;
   box-sizing: border-box;
@@ -64,7 +64,7 @@ p {
 }
 
 textarea::placeholder {
-  color: #FE7BE5;
+  color: #D6FF79;
   line-height: 160px;
 }
 
@@ -78,8 +78,16 @@ svg {
   justify-content: space-around;
 }
 
+.btns * {
+  background: #D6FF79;
+}
+
 .spnf {
   margin: 5px 0;
+}
+
+.rules {
+  color: #DE1A1A;
 }
 
 a:visited {
