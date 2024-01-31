@@ -12,6 +12,8 @@ footer {
   bottom: 0;
   min-width: 100%;
   font-size: medium;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
@@ -20,6 +22,7 @@ body {
   min-height: 100vh;
   font-weight: 500;
   font-size: x-large;
+  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -73,6 +76,10 @@ svg {
 .btns {
   display: flex;
   justify-content: space-around;
+}
+
+.spnf {
+  margin: 5px 0;
 }
 
 a:visited {
