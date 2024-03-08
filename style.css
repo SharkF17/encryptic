@@ -9,7 +9,6 @@ header {
 footer {
   background-color: #A09BE7;
   color: #FFF2F1;
-  position: fixed;
   bottom: 0;
   min-width: 100%;
   font-size: medium;
@@ -32,13 +31,12 @@ body {
 button {
   color: #5F00BA;
   background: #B0FF92;
-  font-size: larger;
+  font-size: medium;
   font-weight: bolder;
-  min-width: 40%;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  
+  margin: 5px;
 }
 
 textarea {
@@ -47,8 +45,8 @@ textarea {
   background-color: #5F00BA;
   text-align: center;
   color: #D6FF79;
-  min-height: 160px;
-  line-height: 160px;
+  min-height: 80px;
+  line-height: 80px;
 }
 
 fieldset {
@@ -61,12 +59,11 @@ fieldset {
 }
 
 p {
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 textarea::placeholder {
   color: #D6FF79;
-  line-height: 160px;
 }
 
 svg {
@@ -76,7 +73,10 @@ svg {
 
 .btns {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  max-width: 60%;
+  margin: auto;
 }
 
 .btns * {
